@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="stye.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="http://www.freepnglogos.com/uploads/mobil-1-logo-png--20.png">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+      <div class="information">
+        <div class="overlay"> </div>
+         <img src="http://www.pngmart.com/files/7/Mobile-Phone-PNG-Image.png" class="mobile" >
+           
+          <div id = "circle">
+
+              <div class="feature one">
+                <!--First feature-->
+                
+                    <img src="https://vectorified.com/images/white-camera-icon-35.png">
+                    <div>
+                        <h1>Camera</h1>
+                        <p>12MP, Wide angle lens</p>
+                    </div>
+                
+              </div>
+              <!--Second feature-->
+              <div class="feature two">
+                <img src="https://vectorified.com/images/white-camera-icon-35.png">
+                <div>
+                    <h1>Processor</h1>
+                    <p>Snapdragon Octa-core 11nm</p>
+                </div>
+              </div>
+              <!--Third feature-->
+              <div class="feature three">
+                <img src="https://vectorified.com/images/white-camera-icon-35.png">
+                <div>
+                    <h1>Display</h1>
+                    <p>6.5" Inch Display </p>
+                </div>
+              </div>
+              <!--Forth feature-->
+              <div class="feature four">
+                <img src="https://vectorified.com/images/white-camera-icon-35.png">
+                <div>
+                    <h1>Battery</h1>
+                    <p>5000mAh, 720Hr Standby</p>
+                </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="controls">
+        <img src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-512.png"  id = "downBtn">
+
+        <h3>Features</h3>
+
+        <img src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-down-01-512.png"  id = "upBtn">
+
+      </div>
+    </div>
+
+    <script>
+        var cicle = document.getElementById("circle");
+        var upBtn = document.getElementById("upBtn");
+        var downBtn = document.getElementById("downBtn");
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        downBtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+
+        upBtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+    </script>
+
+
+</body>
+</html>
